@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: libkcsdr
+Description: KCSDR Device Library
+Version: @CMAKE_PROJECT_VERSION@
+Cflags: -I${includedir}/
+Libs: -L${libdir} -lfobos
